@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.classList.add('js');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SaaSify - Streamline Your Workflow</title>
@@ -51,13 +52,13 @@
         radial-gradient(30rem 24rem at 70% 92%, rgba(16,185,129,0.18), transparent 60%);
       filter: blur(2px);
     }
-    .reveal {
+    .js .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.6s ease, transform 0.6s ease;
       will-change: opacity, transform;
     }
-    .reveal.is-visible { opacity: 1; transform: none; }
+    .js .reveal.is-visible { opacity: 1; transform: none; }
     a:focus-visible, button:focus-visible {
       outline: 3px solid #6366F1;
       outline-offset: 2px;
@@ -69,7 +70,7 @@
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
       }
-      .reveal { opacity: 1 !important; transform: none !important; }
+      .js .reveal { opacity: 1 !important; transform: none !important; }
     }
   </style>
 </head>
